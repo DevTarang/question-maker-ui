@@ -1,7 +1,7 @@
 import react, {useState} from 'react';
 import './styles.css'
 import axios from 'axios';
-import Loader from './../conponents/Loader';
+import Loader from '../components/Loader';
 
 function Upload() {
     
