@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    line-height: 32px;
+    text-align: center;
+}
+
+.Upload-main{
+    background-color: #B68973;
+    color: #1E212D;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    margin: auto;
+    padding-top: 120px;
+    /* justify-content: center; */
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+p{
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.upper-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    border-radius: 20px;
+    width: 40%;
+    background-color: #EABF9F;
+}
+.upper-form > input {
+    position: relative;
+    left: 10%;
+}
+.upload-btn {
+    border-radius: 20px;
+    color: #B68973;
+    font-size: 20px;
+    background: #1E212D;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    border: none;
+    font-weight: 900;
+}
+
+.upload-btn:hover {
+    background: #EABF9F;
+    text-decoration: none;
+    color: #1E212D;
+    cursor: pointer;
+}
+
+.page-main{
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.page{
+    width: 60%;
+    border-radius: 10px;
+    background-color: #FFDFD6;
+    color: #694F8E;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn {
+    border-radius: 20px;
+    color: #694F8E;
+    font-size: 20px;
+    background: #FFDFD6;
+    padding: 10px 30px 10px 30px;
+    text-decoration: none;
+    border: none;
+}
+
+.btn:hover {
+    background: #694F8E;
+    text-decoration: none;
+    color: #FFDFD6;
+    cursor: pointer;
+}
+
+.btn.disabled {
+    pointer-events: none; 
+    cursor: default; 
+    opacity: 0.5;
+}
+
+.btn.disabled:hover {
+    background-color: initial; 
+    color: initial;
+}
+
+.selection-main{
+    background-color: #B692C2;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.selection-main > h1{
+    color:#FFDFD6;
+    padding: 20px 0 10px 0;
+}
+.selection-main > h3{
+    color:#3e2a5b;
+    padding: 5px 0 25px 0;
+}
+
+.gen-page-main{
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    background-color: #B68973;
+    color: #1E212D;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: 40px;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.question-container{
+    background-color: #EABF9F;
+    padding: 20px;
+    line-height: 28px;
+    border-radius: 20px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ques-map-container{
+    width: 70%;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    margin: auto 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  .container:hover input ~ .checkmark {
+    background-color: #FAF3E0;
+  }
+  
+  .container input:checked ~ .checkmark {
+    background-color: #1E212D;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .container .checkmark:after {
+      top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+  .question{
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .score{
+    font-size: 25px;
+    font-weight: 700;
+    color:#1E212D;
+  }
+
+  .correct{
+    color: #1E212D;
+    font-size: 15px;
+    font-weight: 900;
+    padding-left: 10px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .ques-map-container{
+        width: 80%;
+    }
+    .upper-form{
+        width: 70%;
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .ques-map-container{
+        width: 95%;
+    }
+    .gen-page-main{
+        padding: 20px;
+    }
+    .gen-page-main > h1{
+        font-size: 25px;
+    }
+    .question{
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .container {
+        padding-left: 35px;
+        margin-bottom: 5px;
+        font-size: 15px;
+    }
+    .checkmark {
+        height: 15px;
+        width: 15px;
+        background-color: #eee;
+        border-radius: 50%;
+    }
+    .container .checkmark:after {
+        top: 5px;
+        left: 5px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: white;
+    }
+    .upper-form{
+        width: 80%;
+    }
+  }
